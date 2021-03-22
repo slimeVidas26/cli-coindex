@@ -1,0 +1,20 @@
+{
+  "name": "coindex",
+  "version": "1.0.0",
+  "description": "In this project we will build a CLI (command line interface) for a cryptocurrency price app. We will use Commander.js, Inquirer, configstore and some other modules.",
+  "main": "index.js",
+  "bin": "./bin/coindex.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/slimeVidas26/cli-coindex.git"
+  },
+  "author": "isaac",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/slimeVidas26/cli-coindex/issues"
+  },
+  "homepage": "https://github.com/slimeVidas26/cli-coindex#readme"
+}
