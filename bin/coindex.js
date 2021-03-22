@@ -7,7 +7,7 @@ program
        .command('key' , 'Manage API key https://nomics.com')
 
 
-console.log("Hello from coindex")
+//console.log("Hello from coindex")
 
 
 
