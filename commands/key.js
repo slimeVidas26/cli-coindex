@@ -1,6 +1,13 @@
+const KeyManager = require('../lib/keyManager')
+const inquirer = require('inquirer')
+const colors = require('colors')
+const keyManager = require('../lib/keyManager')
+
 const key = {
     set(){
-        console.log("Hello from set")
+       const keyManager = new KeyManager() 
+       const key = keyManager.setKey("123456")
+       console.log(key)
     },
     show(){
         console.log("Hello from show")
