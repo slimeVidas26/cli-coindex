@@ -1,23 +1,19 @@
-const inquirer = require('inquirer')
-const colors = require('colors')
+const KeyManager = require('../lib/KeyManager')
+const config = new KeyManager()
+
 
 const key = {
     set(){
-        
-    }
-
-},
-const key = {
-    set(){
-
-       console.log(key)
+        config.setKey("1111111111111111111","APIkey"  )
+       
     },
     show(){
         console.log("Hello from show")
     },
     remove(){
         console.log("Hello from remove")
-    },
+    }
+   
 
 }
 
