@@ -1,9 +1,15 @@
-const KeyManager = require('../lib/keyManager')
 const inquirer = require('inquirer')
 const colors = require('colors')
 
 const key = {
     set(){
+        
+    }
+
+},
+const key = {
+    set(){
+
        console.log(key)
     },
     show(){
