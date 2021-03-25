@@ -1,7 +1,7 @@
 const KeyManager = require('../lib/KeyManager')
-const config = new KeyManager()
 const inquirer = require('inquirer')
 const colors= require('colors')
+const {isRequired} = require('..//utils/validation')
 
 
 
@@ -14,15 +14,23 @@ const key = {
         {
             type : 'input',
             name : 'key',
-            message : 'Enter API key , please'
+            message : 'Enter API key , please'.green,
+            validate : isRequired
           } 
     ])
-      keyManager.set( input)
+       //console.log(input)
+     const key =  keyManager.setKey(input.key)
+
+     if(key){
+         console.log(`API Key ${key} is created`.blue)
+     }
+     
     },
 
 
     show(){
-        console.log("Hello from show")
+        const keyManager = new KeyManager() ;
+        console.log(keyManager.getKey())
     },
     remove(){
         console.log("Hello from remove")
