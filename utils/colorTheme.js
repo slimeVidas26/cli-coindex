@@ -1,6 +1,6 @@
 const colors = require('colors')
 
- const test = colors.setTheme({
+ colors.setTheme({
     silly: 'rainbow',
     input: 'grey',
     verbose: 'cyan',
@@ -13,4 +13,4 @@ const colors = require('colors')
     error: 'red'
   });
 
-  module.exports = test
+  module.exports = colors

@@ -1,4 +1,4 @@
-const test = require('../utils/colorTheme')
+const colors = require('../utils/colorTheme')
 
 
 
